@@ -1,6 +1,6 @@
 ### Module Pattern
 
--	Basic
+-	Basic (privates and publics)
 
 ```js
 var basketModule = (function () {
@@ -80,7 +80,7 @@ myModule.publicMethod();
 ```js
 // Global module
 var myModule = (function () {
- 
+
   // Module object
   var module = {},
     privateVariable = "Hello World";

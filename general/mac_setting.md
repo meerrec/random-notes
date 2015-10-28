@@ -11,3 +11,9 @@
     - It is a completely cross platform distribution that stays true to the feel of vim while providing modern features like a plugin management system, autocomplete, tags and tons more.
 - [homebrew](http://brew.sh/)
     - The missing package manager for OS X
+- [Bartender 2](http://www.macbartender.com/)
+    -  Organize your menu bar apps
+- [SizeUp](http://www.irradiatedsoftware.com/sizeup/)
+    - SizeUp allows you to quickly resize and position your windows with keyboard shortcuts or a handy menu bar icon.
+- [iStat Menus](https://bjango.com/mac/istatmenus/)
+    - An advantage Mac system monitor for your menubar

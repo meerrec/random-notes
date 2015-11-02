@@ -18,3 +18,5 @@
     - Simple library for handling keyboard shortcuts in Javascript
 - [jsdoc](https://github.com/jsdoc3/jsdoc)
     - An API documentation generator for JavaScript
+- [Moment.js](http://momentjs.com/)
+    - Parse, validate, manipulate, and display dates in JavaScript.

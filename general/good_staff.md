@@ -20,3 +20,5 @@
     - An API documentation generator for JavaScript
 - [Moment.js](http://momentjs.com/)
     - Parse, validate, manipulate, and display dates in JavaScript.
+- [Ghost](https://ghost.org/)
+    - Ghost is a simple, powerful publishing platform that allows you to share your stories with the world.

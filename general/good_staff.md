@@ -22,3 +22,5 @@
     - Parse, validate, manipulate, and display dates in JavaScript.
 - [Ghost](https://ghost.org/)
     - Ghost is a simple, powerful publishing platform that allows you to share your stories with the world.
+- [Faker](https://github.com/stympy/faker)
+    - A library for generating fake data such as names, addresses, and phone numbers.

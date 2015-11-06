@@ -11,3 +11,34 @@ try {
 } catch(e) {
     alert('Web Audio API is not supported in this browser');
 }
+```
+### Chaining the input and output
+```js
+var node1 = someFunction() // first node (input)
+var node2 = someFunction(); // second node
+var node3 = someFunction(); // another node
+node1.connect(node2);
+node1.connect(node3);
+node2.connect(audioContext.destination); // audioContext.destination is the system output
+node3.connect(audioContext.destination); //
+/*
+node1 ----- node 2
+  |           |
+  |           |
+  |           |          
+node3 ----- destination
+ */
+```
+### Oscillator Node
+```js
+var osc = audioContext.createOscillator();
+osc.type = 'sine'; // sine, square, sawtooth, triangle
+
+// Note that the belows are in the type of AudioParam
+osc.frequency.value = 440;
+osc.detune.value = 2; // A detuning value (in Cents) which will offset the frequency by the given amount
+// be sure to connect the osc node to destination before starting it
+osc.start(0);
+osc.stop(2);
+```
+

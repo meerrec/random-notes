@@ -30,6 +30,8 @@ node3 ----- destination
  */
 ```
 ### Oscillator Node
+- Don't forget to connect the node to the destination
+
 ```js
 var osc = audioContext.createOscillator();
 osc.type = 'sine'; // sine, square, sawtooth, triangle
@@ -41,4 +43,25 @@ osc.detune.value = 2; // A detuning value (in Cents) which will offset the frequ
 osc.start(0);
 osc.stop(2);
 ```
+### Load Audio File
+- The actual buffer data can be accessed in the callback function
+
+```js
+function loadAudio(url, cb) {
+
+    var request = new XMLHttpRequest();
+    request.open('GET', url, true);
+    request.responseType = 'arraybuffer';
+
+    request.onload = function() {
+        audioContext.decodeAudioData(request.response, function(buffer) {
+            cb(buffer);
+        });
+    }
+    request.send();
+}
+```
+
+
+
 

@@ -61,7 +61,25 @@ function loadAudio(url, cb) {
     request.send();
 }
 ```
+### Play an audio file
+- This is an `AudioBufferSourceNode`
+- Don't forget to connect the node to the destination
 
+```js
+// suppose that we already get the buffer while loading the audio file
+var source = audioContext.createBufferSource();
+source.buffer = theBufferFromAudioFile;
+source.start(0);
+scouce.stop(0);
+// some properties 
+// buffer AudioBuffer 
+// detune AudioParam
+// loop Boolean
+// loopEnd double
+// loopStart double
+// onended EventHandler
+// playbackRate AudioParam
+// ```
 
 
 

@@ -16,4 +16,4 @@ Nearly every project was my company is written in `node`, `express`, and `handle
 There are tons of wordpress host companies in the market these days and the price range is from $10 to an unknown number based on the performance, the disk and the network trafiic of the host. I'm not a guy for some so called auto generating tools for wordpress. I prefer set all stuff up within a pure Lunix machine. So AWS from Amazon is one of the best place for me to get started.
 
 ### Speed
-
+I've been using wordpress for personal site/blog for the pass three years and I'm not satisfied with the speed - not only the speed to view the site, but also the speed to make posts, customize theme on the admin dashboard. Even if I need more time to explore the Ghost, but from what I see right now, the speed is very good when compare to my old experience of wordpress.

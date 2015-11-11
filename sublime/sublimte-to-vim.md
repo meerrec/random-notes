@@ -1,1 +1,0 @@
-## Vim verstion for some of the common sublime text shortcut

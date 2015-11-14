@@ -87,5 +87,18 @@ scouce.stop(0);
 var bufferData = buffer.getChannelData(0); // bufferData is an AudioBufferSourceNode
 ```
 
+### Interaction with `audio` tag
+- HTML
+```
+<audio id='myAudio' controls preload="none" src=""></audio>
+```
+- JS
+
+```js
+var myAudio = document.querySelector('#myAudio');
+var source = audioContext.createMediaElementSource(myAudio);
+// then you can use source as a normal Audio Node and connect it with other nodes
+```
+
 
 

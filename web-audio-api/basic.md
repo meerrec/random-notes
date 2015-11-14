@@ -81,5 +81,11 @@ scouce.stop(0);
 // playbackRate AudioParam
 // ```
 
+### Get Audio Buffer Array
+
+```js
+var bufferData = buffer.getChannelData(0); // bufferData is an AudioBufferSourceNode
+```
+
 
 

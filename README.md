@@ -1,0 +1,1 @@
+## Random Notes for Intreseting Stuff

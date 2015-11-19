@@ -19,3 +19,5 @@
     - Rules to draw the image
     - Front end should get two Uint8Array(1024) every animationFrame, streaming to server?
     - Backend should do all the processing work? Or front end should do some of them?
+
+- Linked List stucture for Web Audio API

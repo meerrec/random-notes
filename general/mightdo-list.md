@@ -21,3 +21,5 @@
     - Backend should do all the processing work? Or front end should do some of them?
 
 - Linked List stucture for Web Audio API
+
+- Drum machine or Avator generator based on Github contribution

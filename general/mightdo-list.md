@@ -23,3 +23,5 @@
 - Linked List stucture for Web Audio API
 
 - Drum machine or Avator generator based on Github contribution
+
+- Place to keep track of all the running AWS instances and node servers with port

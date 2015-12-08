@@ -47,7 +47,7 @@ ZSH_THEME="cloud"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git, svn, svn-fast-info)
+plugins=(git web-search)
 
 # User configuration
 
@@ -90,7 +90,6 @@ alias push='git push'
 alias pull='git pull'
 
 alias ec2_node_1='ssh -i ~/certs/EC2-haochuan-1.pem ubuntu@54.153.41.106'
-alias ec2_wordpress_1='ssh -i ~/certs/ec2-haochuan-wordpress-1.pem ec2-user@52.8.53.12'
 
 
 

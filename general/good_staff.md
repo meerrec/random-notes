@@ -24,3 +24,5 @@
     - Ghost is a simple, powerful publishing platform that allows you to share your stories with the world.
 - [Faker](https://github.com/stympy/faker)
     - A library for generating fake data such as names, addresses, and phone numbers.
+- [GitBook](https://github.com/GitbookIO/gitbook)
+    - Modern book format and toolchain using Git and Markdown

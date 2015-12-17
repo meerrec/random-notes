@@ -26,3 +26,6 @@
     - A library for generating fake data such as names, addresses, and phone numbers.
 - [GitBook](https://github.com/GitbookIO/gitbook)
     - Modern book format and toolchain using Git and Markdown
+
+- [bluebird](https://github.com/petkaantonov/bluebird)
+    - Bluebird is a full featured promise library with unmatched performance.

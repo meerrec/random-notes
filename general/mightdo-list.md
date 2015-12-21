@@ -30,3 +30,6 @@
 - Regex Tutorial Website
 - Web Text Editor
     - Run some code?
+
+- Learn Redux
+

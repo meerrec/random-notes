@@ -33,4 +33,5 @@
 
 - Learn Redux
 - Node Linux Utilities
+- Take a look for JS Promise
 

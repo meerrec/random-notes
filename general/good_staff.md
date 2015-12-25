@@ -29,3 +29,5 @@
 
 - [bluebird](https://github.com/petkaantonov/bluebird)
     - Bluebird is a full featured promise library with unmatched performance.
+- [tldr](http://tldr-pages.github.io/)
+    - tldr is a collection of simplified and community-driven man pages.

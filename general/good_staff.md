@@ -31,3 +31,5 @@
     - Bluebird is a full featured promise library with unmatched performance.
 - [tldr](http://tldr-pages.github.io/)
     - tldr is a collection of simplified and community-driven man pages.
+- [is.js](https://github.com/arasatasaygin/is.js)
+    - Micro check library

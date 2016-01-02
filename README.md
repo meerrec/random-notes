@@ -10,4 +10,3 @@
 - Sublime
 - Vim
 - Web Audio API
-- Happy 2016

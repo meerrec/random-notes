@@ -2,6 +2,8 @@
 
 Welcome to 2016! This documentation describes how I set my front-end development environment on a new Mac OSX system. If you ever have a chance to do the setup, you may find something helpful here.
 
+Note: I do not have the details and usage of all the stuff I mentioned in the list below. Please google it/them to get more information.
+
 ## Google Chrome
 It's a must have browser for every front-end guy, download from here: [https://www.google.com/chrome](https://www.google.com/chrome).
 

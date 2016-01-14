@@ -33,3 +33,5 @@
     - tldr is a collection of simplified and community-driven man pages.
 - [is.js](https://github.com/arasatasaygin/is.js)
     - Micro check library
+- [JSVerbalExpressions](https://github.com/VerbalExpressions/JSVerbalExpressions)
+    - JavaScript Regular expressions made easy

@@ -1,6 +1,6 @@
 ## Web Audio API Series 1 - Introduction
 
-In this *Web Audio API Series*, we will introduce how to process and synthesise sound in the web browser, which will cover over 80% features of Web Audio API, as well as some basic general knowledge about music theory, audio, sound, and signal processing:
+In this *Web Audio API Series*, we will introduce how to process and synthesize sound in the web browser, which will cover over 80% features of Web Audio API, as well as some basic general knowledge about music theory, audio, sound, and signal processing:
 
 - Introduction
 - Synthesis Basics
@@ -13,7 +13,7 @@ In this *Web Audio API Series*, we will introduce how to process and synthesise 
     - Decode and Playback
     - Samples
     - Draw Waveforms for Time Domain
-    - Draw Dpectrum for Frequency Domain
+    - Draw Spectrum for Frequency Domain
 - Audio Effect
     - Tremolo
     - Overdrive/Distortion
@@ -29,22 +29,24 @@ The Web Audio API is a high-level JavaScript API for processing and synthesizing
 
 ## Difference Between Web Audio API and HTML5 Audio Tag
 
-HTML5 `audio` tag gives developers a way to handle the basic audio playback functionalities (load, play, pause, stop), along with the audio volume controller. However, Web Audio API is used for processing and synthesizeing audio in the web browser. Suppose that you are a guitar player, you probably may need some guitar effect pedals (overdrive, delay, reverb) to get the rocky sound you like, it is exactly the role of Web Auiod API in the browser.
+HTML5 `audio` tag gives developers a way to handle the basic audio playback functionalities (load, play, pause, stop), along with the audio volume controller. However, Web Audio API is used for processing and synthesizing audio in the web browser. Suppose that you are a guitar player, you probably may need some guitar effect pedals (overdrive, delay, reverb) to get the rocky sound you like, it is exactly the role of Web Auiod API in the browser.
 
 - Example: [pure electronic guitar sound](https://soundcloud.com/haochuan/guitar1?in=haochuan/sets/test-1/s-pqdGV)
 - Example: [electronic guitar sound with reverb effect](https://soundcloud.com/haochuan/reverb?in=haochuan/sets/test-1/s-pqdGV)
 - Example: [electronic guitar sound with bass synth effect](https://soundcloud.com/haochuan/bass-synth?in=haochuan/sets/test-1/s-pqdGV)
 
-I think you can get the general idea from the examples. Using Web Audio API, if we have a file of first example, we can write our own audio effect code to generater the sounds in example 2 and 3.
+I think you can get the general idea from the examples. Using Web Audio API, if we have a file of first example, we can write our own audio effect code to generate the sounds in example 2 and 3.
 
 
 ## Where Can We use Web Audio API currently
 
-Currently all of the modern browsers support Web Audip API including Chrome, FireFox and Safari in both desktop version and mobile version. 
+Currently all of the modern browsers support Web Audio API including Chrome, FireFox and Safari in both desktop version and mobile version. 
 
 ![Web Audio API support](images/web-audio-api-support.png)
 
 ## AudioContext
+
+From here we will get into the Web Audio APi.
 
 `AudioContext` is where all magic audio things happen in the browser. It is a little container where all our sound will live. It provides access to the Web Audio API, which in turn gives us access to some very powerful functions. Below is the Javascript code to initialize the global `AudioContext` variable in your browser.
 
@@ -83,6 +85,6 @@ node3 ----- destination
 
 ---
 
-That's all. If you want to know more details, please search for `web audio api` in your favarite search engine. Hope you enjoy and see you in next coming article for my Web Audio API Series.
+That's all. If you want to know more details, please search for `Web Audio API` in your favorite search engine. Hope you enjoy and see you in next coming article for my Web Audio API Series.
 
 

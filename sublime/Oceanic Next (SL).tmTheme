@@ -31,7 +31,7 @@
 				<key>background</key>
 				<string>#1D1F21</string>
 				<key>caret</key>
-				<string>#E37470</string>
+				<string>#FFCC00</string>
 				<key>foreground</key>
 				<string>#CDD3DE</string>
 				<key>invisibles</key>
@@ -43,16 +43,16 @@
 			</dict>
 		</dict>
 		<dict>
-		    <key>name</key>
+    		<key>name</key>
 		    <string>Block Cursor</string>
 		    <key>scope</key>
 		    <string>block_cursor</string>
 		    <key>settings</key>
-		    <dict>
-		        <key>foreground</key>
-		        <string>#FFFFFF</string>
-		        <key>background</key>
-		        <string>#E4731B</string>
+			<dict>
+	        	<key>foreground</key>
+        <string>#000000</string>
+        <key>background</key>
+        <string>#FFCC00</string>
 		    </dict>
 		</dict>
 		<dict>

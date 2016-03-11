@@ -35,3 +35,5 @@
     - Micro check library
 - [JSVerbalExpressions](https://github.com/VerbalExpressions/JSVerbalExpressions)
     - JavaScript Regular expressions made easy
+- [deepstream.io](https://github.com/deepstreamIO/deepstream.io)
+    - A scalable node server for realtime apps

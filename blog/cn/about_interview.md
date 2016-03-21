@@ -17,7 +17,7 @@
 3+ years experience with browser APIs and optimizing front end performance
 BS/MS in Computer Science or a related technical field preferred
 
-这些所谓的硬实力也往往是每个面试者最在乎的部。
+这些所谓的硬实力也往往是每个面试者最在乎的部份。
 
 所以我们总在讨论怎么学习JavaScript
 所以我们总在讨论哪个IDE好
@@ -61,6 +61,10 @@ phone screen和onsite加起来，如果你一切顺利，你会遇到至少5，6
 
 但往往这么一个看似简单的问题却难倒了很多在白板上代码写的飞起的‘大神’们。
 
+如果你跟我说没什么其他的原因就因为我就觉得web很酷很屌，我觉得这也是一个很好的答案，谁不喜欢很酷很屌的东西？
+
+但是大多数人就卡在这里了。
+
 看到过太多人知乎上问；
 
 怎么有效的读jquery源码？
@@ -68,6 +72,6 @@ phone screen和onsite加起来，如果你一切顺利，你会遇到至少5，6
 我这样的简历到底能不能找到工作
 前端有前途么
 
-各位可以问问自己，我为什么读jquery源码？为什么要学HTML，CSS？为什么要做前端？仅仅就是因为web比较火，程序员挣得多？
+各位可以问问自己，我为什么读jquery源码？为什么要学HTML，CSS？为什么要做前端？仅仅就是因为web比较火，程序员挣得多，还是你觉得前端比较好混？
 
 这样的同事我可不想要。

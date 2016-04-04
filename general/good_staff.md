@@ -37,3 +37,9 @@
     - JavaScript Regular expressions made easy
 - [deepstream.io](https://github.com/deepstreamIO/deepstream.io)
     - A scalable node server for realtime apps
+- [Inquirer.js](https://github.com/SBoudrias/Inquirer.js)
+    - A collection of common interactive command line user interfaces.
+- [draft-js](https://github.com/facebook/draft-js)
+    - A React framework for building text editors.
+- [is.js](https://github.com/arasatasaygin/is.js)
+    - general-purpose check library

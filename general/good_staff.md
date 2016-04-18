@@ -43,3 +43,5 @@
     - A React framework for building text editors.
 - [is.js](https://github.com/arasatasaygin/is.js)
     - general-purpose check library
+- [isomorphic-fetch](https://github.com/matthew-andrews/isomorphic-fetch)
+    - Isomorphic WHATWG Fetch API, for Node & Browserify

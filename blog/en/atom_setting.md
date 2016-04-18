@@ -67,7 +67,7 @@ This is a matching for vim's [nerdtree](https://github.com/scrooloose/nerdtree).
 * [nuclide](http://nuclide.io/)
 * [flow](http://flowtype.org/): A STATIC TYPE CHECKER FOR JAVASCRIPT
 
-Personally I always ignore those two for the slowness, but in some way I will speed the development.
+Personally I always ignore those two for the slowness, but in some way it could speed the development.
 
 -----
 

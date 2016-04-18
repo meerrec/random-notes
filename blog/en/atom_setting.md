@@ -4,6 +4,10 @@ If you are trying to figure our what is the best editor among vim, emacs, sublim
 
 Basically this is the article about my Atom's setting for HTML, CSS, JS, React, Node.js, and all other front end related stuff.
 
+This is how my Atom looks:
+
+![Alt text](/images/atom_setting.png)
+
 -----
 
 #### UI Theme
@@ -56,12 +60,16 @@ This is a matching for vim's [nerdtree](https://github.com/scrooloose/nerdtree).
 * [todo-show](https://atom.io/packages/todo-show): Finds all the TODOs, FIXMEs, CHANGEDs, etc. in your project.
 * [vim-mode](https://atom.io/packages/vim-mode)
 
+-----
+
 #### Interesting Stuff from Facebook
 
 * [nuclide](http://nuclide.io/)
 * [flow](http://flowtype.org/): A STATIC TYPE CHECKER FOR JAVASCRIPT
 
 Personally I always ignore those two for the slowness, but in some way I will speed the development.
+
+-----
 
 #### Other
 * Font Family: monaco

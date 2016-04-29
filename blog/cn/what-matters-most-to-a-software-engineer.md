@@ -1,6 +1,17 @@
 基于个人的经历和理解，下面内容列出了我认为对于一个软件工程师最重要的六个方面，然后对于每个方面我给出了解释和例子。如果你对这个话题有兴趣，请在评论写下你的观点和看法，谢谢！
 
+-----
+您还可以在这里找到我：
+- [知乎](https://www.zhihu.com/people/_haochuan)
+- [博客](http://haochuan.io/)
+- [Medium](https://medium.com/@haochuan)
+- [Github](https://github.com/haochuan)
 
+英文版请前往：
+- [Medium](https://medium.com/@haochuan/what-matters-most-to-a-software-engineer-bc63092d033d#.mi2iixbtc)
+- [博客]([http://haochuan.io/what-matters-most-to-a-software-engineer/](https://link.zhihu.com/?target=http://haochuan.io/setting-atom-for-web-development/))
+
+-----
 
 
 
@@ -52,6 +63,8 @@
 
 ##### 差
 什么都没想到
+
+-----
 
 ## 某种语言的代码能力和解决问题的能力
 
@@ -184,6 +197,7 @@ function sum(a, b) {
 }
 ```
 
+-----
 
 ## 开发工具的熟练度
 没有必要所有人都要是vim或者emacs的大神，但是你必须能够玩转至少一个你喜欢的编辑器/IDE，包括各种插件，自动化，以及git和常用的命令行命令。
@@ -238,6 +252,8 @@ const API = '/api/getPage';
 
 全选 - 复制 - 新建一行 - 粘贴
 
+-----
+
 ## 熟悉软件开发的流程和步骤
 
 尽管在有些公司会有人来专门帮你做这些事情，但是如果你对这整个流程比较了解的话，会让你生活轻松点并且节约很多时间。
@@ -251,10 +267,13 @@ const API = '/api/getPage';
 - 知道怎么部署你的代码
 - 知道测试相关的内容
 
+-----
+
 ## 学习能力
 
 在我看来强行的要求每个软件工程师都用一样的东西和拥有一样的技术栈是几乎不可能的事情，即使他们有着相同的职位和相同的工作内容，所以在平时的工作中我们有一部分时间花在了学习别人熟悉的技术和任何人都不熟悉的新技术上。让我们回到React刚开始变火的那个时候，是否能在短时间内判断出react到底好不好，是否能在短时间内判断出哪个flux的实现更适合你的项目，是否能在短时间内开始用React来替换你之前的工具，这些就是所谓的学习能力。假设你从来没有用过bootstrap，通过官方的文档和网上的各种资源，你需要多长时间才能把这个新东西用到你自己的项目里，这就是所谓的学习能力。
 
+-----
 
 ## 沟通能力
 

@@ -1,8 +1,11 @@
+
+
+
+
+
 ## Computer science fundamentals 10
 
 If you never feel like the understanding of some basic algorithm, data structure and design pattern is a must-have kwonledge during your work, then I have to doubt that if you are considered as en eligble software engineer. Here I say computer science fundamentals because we software engineer are not considered as computer scientist, so there is no need for us to explore the black magic of a spesific concept or algorithm. Instead, a software engineer do need to know basic principles of Computer science fundamentals, as well as the ways to solve the most common problems in the software development.
-
-[Algorithms in the "Real World"](http://www.cs.cmu.edu/~guyb/realworld.html)
 
 
 ### Example 1
@@ -28,6 +31,20 @@ Two stack: undoStack [] and redoStack [].
 - Undo, pop from undoStack, push pop result to redoStack, undoStack = [a, b] and redoStack = [c], input = ab
 - Undo, pop from undoStack, push pop result to redoStack, undoStack = [a] and redoStack = [c, b], input = a
 - Redo, pop from redoStack, push pop result to undoStack, undoStack = [a, b] and redoStack = [c], input = ab
+
+
+#### Poor
+You have no idea where to start
+
+
+### Example 3
+You heard someone is talking about fibonacci.
+
+#### Good
+The first thing coming your mind is 1 1 2 3 5 8.
+
+#### Average
+You don't know what is fibonacci.
 
 
 #### Poor
@@ -134,6 +151,35 @@ for (var i = 0; i < 4; i++) {
 }
 ```
 
+#### Example 3 (Comments and documentaion)
+Make sure your code is fully documentated, and knowing where to add `FIXME`, `TODO`, `REMOVEME` in your code.
+
+
+#### Good
+
+```js
+/**
+ * Function to return the sum of two integer
+ * @param  {Integer} a first integer
+ * @param  {Integer} b second integer
+ * @return {Integer}   sum of a and b
+ */
+
+// TODO: support float sum in next month
+function sum(a, b) {
+    return a + b;
+}
+```
+
+
+#### Poor
+
+```js
+function sum(a, b) {
+    return a + b;
+}
+```
+
 
 ## Mastery in development Tools 5
 There is no need for everyone to master vim or emacs as the editor, but you do need to be fluent in at least one code editor/IDE based on your preference, as well as some common used tools such as git and some basic terminal command.
@@ -156,7 +202,7 @@ loadContent(HOST + API)
 
 - sublime
 
-Write your own plugin for those common task
+Write your own plugin for or find a plugin online for those common tasks.
 
 #### Poor
 
@@ -184,10 +230,31 @@ Click anywhere in line 3, the `Command + Control + upArrow`
 #### Poor
 
 Select -> copy -> paste
+within a limit time
 
+## Familiarity with software development methodology processes 10
+Although sometimes you don't need to care more about this, if you do, kwoning all these will make your like easier and save you a lot time.
 
-## Familiarity with software development methodology processes 5
+#### Good
 
-## Learning Ability 20
+- Know how to use git/svn to collaboration
+- Know how to set the development enviroment quickly
+- Know how to deploy your code
+- Know test related stuff
+
+## Learning Ability 15
+
+It is nearly impossible to require that every software engineer share a common developemnt stack even if they are in the same position and doing the same job, but at least we should have the ability to learn. Let's go back to the time when React started to become popular, the ability to figure out whether such a new thing is good or bad, the ability to find the most suitable Flux implementaion based on your project, the ability to add this new library to your exsited project, those are the ability of learning. So if my company uses a lot of Angular as the front end framework, I won't list Angular as the must-have skill when writing the job description for recruiting. Instead, I care more the learning ability and in my mind, a good software engineer can pick up a new thing and make contribution withing 2 weeks. 
 
 ## Communication 10
+
+Good communication skill is a time saver and will make you happy.
+
+The list below is the skills that are most important in my work about communication:
+
+- How well can you let other engineer understand your code within a limit time?
+- How well can you understand other engineer's code within a limit time?
+- If there is a new engineer joing your project recently, how should you help him get started and make contribution?
+- Can you describe your problem or question clearly when talking or in a discussion?
+
+

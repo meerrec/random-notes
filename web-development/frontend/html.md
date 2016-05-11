@@ -1,6 +1,7 @@
+# Start Here
 ```
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
@@ -10,18 +11,18 @@
 </body>
 </html>
 ```
+-----
 
- This provides the web browser (or other user agent) with information about the type of markup language in which the page is written, which may or may not affect the way the browser renders the content.
 
-The head element contains metadata—information that describes the document itself, or associates it with related resources, such as scripts and style sheets.
 
-Everything that you can see in the browser window (or viewport) is contained inside this element, including paragraphs, lists, links, images, tables, and more. 
+* `<!DOCTYPE html>` provides the web browser (or other user agent) with information about the type of markup language in which the page is written, which may or may not affect the way the browser renders the content.
 
-http://www.sitepoint.com/web-foundations/elements/
-http://htmldog.com/guides/html/beginner/
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element
-The basic structure of an HTML document includes tags, which surround content and apply meaning to it.
+* `<html></html>` — the `<html>` element. This element wraps all the content on the entire page, and is sometimes known as the root element.
 
-Tags can also have attributes, which are extra bits of information. Attributes appear inside the opening tag and their values sit inside quotation marks. They look something like <tag attribute="value">Margarine</tag>. We will come across tags with attributes later.
+* The `<head>` element contains metadata—information that describes the document itself, or associates it with related resources, such as scripts and style sheets.
 
-Tags tend not to do much more than mark the beginning and end of an element. Elements are the bits that make up web pages. You would say, for example, that everything that is in between (and includes) the <body> and </body> tags is the body element. As another example, whereas “<title>” and “</title>” are tags, “<title>Rumple Stiltskin</title>” is a title element.
+* `<meta charset="utf-8">` — this element sets the character set your document should use to utf-8, which includes most characters from all known human languages. Essentially it can now handle any textual content you might put on it. There is no reason not to set this, and it can help avoid some problems later on.
+
+* `<title></title>` — this sets the title of your page, which is the title that appears in the browser tab the page is loaded in, and is used to describe the page when you bookmark/favourite it.
+
+* `<body></body>` — the <body> element. This contains all the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or whatever else.

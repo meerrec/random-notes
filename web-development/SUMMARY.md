@@ -1,5 +1,5 @@
 # Summary
-* [General Concept](generalConcept/README.md)
+* [General Concepts](generalConcept/README.md)
 * [Frontend](frontend/README.md)
     * [HTML](frontend/html.md)
     * [CSS](frontend/css.md)

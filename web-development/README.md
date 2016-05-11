@@ -1,15 +1,17 @@
 # Introduction
 
-### About this book
+### About the contents
 
-This is a short book for some basic concepts and practices about web development indlucing HTML, CSS, Javascript and Node.js.
+This is some contents for the basic concepts and practices about web development indlucing HTML, CSS, Javascript and Node.js.
+
+These contents are not considered as tutorials, but just some idea which may be confusing when learning web related stuff.
 
 There are many wonderful tutorials online, please go and search if you need.
 
 -----
 
-### Requirements
-You will need the following things to follow along the contents and practices of this book:
+### Tools you need to have
+You will need the following things to follow along the contents:
 
 * A modern browser (The lateset version of Google Chrome is highly recommanded)
 * Editor/IDE

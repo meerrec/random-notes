@@ -11,9 +11,6 @@
 </body>
 </html>
 ```
------
-
-
 
 * `<!DOCTYPE html>` provides the web browser (or other user agent) with information about the type of markup language in which the page is written, which may or may not affect the way the browser renders the content.
 
@@ -26,3 +23,19 @@
 * `<title></title>` — this sets the title of your page, which is the title that appears in the browser tab the page is loaded in, and is used to describe the page when you bookmark/favourite it.
 
 * `<body></body>` — the <body> element. This contains all the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or whatever else.
+
+# HTML Element
+
+* A HTML element includes `opening tag`, `content`, and `close tag`
+
+![image](../images/html1.png)
+
+* Some of the elements are self closed
+
+```
+    <img src="images/xxx.png">
+```
+
+* HTML element can be assigned with different attributes
+
+![image](../images/html2.png)

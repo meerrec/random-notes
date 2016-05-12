@@ -1,18 +1,23 @@
-* Relationship
+# What is Node.js
 
-http://learn.shayhowe.com/html-css/
+* Node.js is an open-source, cross-platform runtime environment.
+* Run Javascript out of browser
 
-* HTML
-    * `head` and `body`
-    * `tag`
-    * `id` and `class`
-* CSS 
-    * Inline style vs external file
-    * Apply style to HTML
-* Javacsript
-    * Basic syntax
-    * Inline script vs external file
-    * Selector
-    * jQuery
-* Bootstrap
+#### With Node.js, Javascirpt can:
+
+* Writing server
+* Control Hardware (Robot, arduino, raspberry pi)
+* Making iOS and Android App
+* Make Windows, Mac, Linux App
+
+#### Apps written in HTML, CSS and Javascript: 
+
+![image](../images/backend1.png)
+
+-----
+
+# Quick Start
+
+* Hello World
+* Sum
 

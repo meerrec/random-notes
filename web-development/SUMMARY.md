@@ -5,4 +5,5 @@
     * [CSS](frontend/css.md)
     * [Javascript](frontend/javascript.md)
 * [Backend](backend/README.md)
+* [Tips](tips/README.md)
 

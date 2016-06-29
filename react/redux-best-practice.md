@@ -14,6 +14,8 @@ case "ADD"
         newItem
     ];
 
+```
+
 - In `reducer`, use `Array.slice' instead of `Array.splice`
 
 ```
@@ -29,6 +31,8 @@ case "DELETE"
 ```
 
 - In `reducer`, if you want to change values in an element in the state array
+
+```
 
 // First way
 case "EDIT"
@@ -47,3 +51,4 @@ case "EDIT"
             return item;
         }
     })
+```

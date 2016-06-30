@@ -1,6 +1,6 @@
 ## Redux Best Practices
 
-Top 10 conclusions I've learned through over 20 redux projects from tiny to large scale.
+Top 10 things I've learned through over 20 redux projects from tiny to large scales.
 
 #### Use ES6
 
@@ -13,7 +13,7 @@ Some of the ES6 features will be heavily used in your redux code:
 #### Setup your project properly
 
 Use webpack, hot-loading, react-router, react-redux, enzyme...
-[Mern](http://mern.io/) is a very good example about how to setup and stucture your project, you probably don't need all the stuff in Mern, just pick things you need and learn the concept.
+[Mern](http://mern.io/) is a very good example about how to setup and structure your project, you probably don't need all the stuff in Mern, just pick things you need and learn the concept.
 
 #### Choose the middlewares based on your ways and what you need
 
@@ -40,7 +40,7 @@ It does not make sense for me that any component should know the detail of an ac
 
 #### Make your reducer clean
 
-I perfer to do a lot of pre-processing for the raw data in action creators instead of in reducer. The the action parameter in reducer function will always be ready to use.
+I prefer to do a lot of pre-processing for the raw data in action creators instead of in reducer. The the action parameter in reducer function will always be ready to use.
 
 #### The ways to return a new state in reducer
 

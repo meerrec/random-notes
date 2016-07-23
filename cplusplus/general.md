@@ -39,6 +39,36 @@ typedef vector<double>::size_type vec_sz;
 vec_sz size = data.size();
 ```
 
+#### Reference
+
+- `T&`: Denote a reference to the type `T`, Most commonly used to pass a parameter that a function may change
+- `const T&`: Denote a reference to the type `T` that may not be used to change the value to which the reference is bound. Usually used to avoid the cost of copying a parameter to a function.
+
+#### struct
+
+is a type that contains zero or more members.
+
+```
+struct type_name {
+    member name
+    ...
+
+};
+```
+
+#### Exeption
+
+```
+try {
+    //...
+} catch (e) {
+    //...
+}
+
+// e.what() : returns a value that reports on what happened to cause the error.
+```
+
+
 
 
 

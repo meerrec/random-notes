@@ -1,0 +1,294 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Wordpress on EC2 | Random Notes for Intreseting Stuff</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    
+    <link rel="prev" href="../AWS/nginx_port_forwarding.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="1.3"
+        data-chapter-title="Wordpress on EC2"
+        data-filepath="AWS/running_wordpress_on_ec2.md"
+        data-basepath=".."
+        data-revision="Tue Aug 23 2016 14:48:17 GMT-0700 (PDT)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="AWS/index.html">
+            
+                
+                    <a href="../AWS/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        AWS
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="AWS/2015-9-8-AWS-PM2-ISSUE.html">
+            
+                
+                    <a href="../AWS/2015-9-8-AWS-PM2-ISSUE.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        AWS PM2 issues
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="AWS/nginx_port_forwarding.html">
+            
+                
+                    <a href="../AWS/nginx_port_forwarding.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Nginx port forwarding
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="AWS/running_wordpress_on_ec2.html">
+            
+                
+                    <a href="../AWS/running_wordpress_on_ec2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Wordpress on EC2
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Random Notes for Intreseting Stuff</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="how-to-set-up-a-wordpress-server-on-ec2">How to set up a wordpress server on EC2</h2>
+<h3 id="create-aws-account">Create AWS account</h3>
+<p>See details on <a href="http://aws.amazon.com/" target="_blank">AWS website</a></p>
+<h3 id="create-an-instance">Create an instance</h3>
+<p>See details on <a href="http://aws.amazon.com/" target="_blank">AWS website</a></p>
+<h3 id="ssh-into-your-instance">SSH into your instance</h3>
+<h3 id="install-the-apache-web-server">Install the Apache Web Server</h3>
+<ul>
+<li>To install the Apache Web Server, type:<pre><code>yum install httpd
+</code></pre></li>
+<li>Start the Apache Web Server:<pre><code>service httpd start
+</code></pre></li>
+</ul>
+<h3 id="install-php">Install php</h3>
+<ul>
+<li>To install PHP, type:<pre><code>yum install php php-mysql
+</code></pre></li>
+<li>Restart the Apache Web Server:<pre><code>service httpd restart
+</code></pre></li>
+<li>Create a page to test your PHP installation:<pre><code>cd /var/www/html
+vi test.php
+</code></pre></li>
+</ul>
+<h3 id="install-mysql">Install MySQL</h3>
+<ul>
+<li>To install MySQL, type:<pre><code>yum install mysql-server
+</code></pre></li>
+<li>Start MySQL:<pre><code>service mysqld start
+</code></pre></li>
+<li>Create your &#x201C;blog&#x201D; database:<pre><code>mysqladmin -uroot create blog
+</code></pre></li>
+<li>Secure your database:<pre><code>mysql_secure_Installation
+</code></pre></li>
+<li>Answer the wizard questions as follows:<ul>
+<li>Enter current password for root: Press return for none</li>
+<li>Change Root Password: Y</li>
+<li>New Password: Enter your new password</li>
+<li>Remove anonymous user: Y</li>
+<li>Disallow root login remotely: Y</li>
+<li>Remove test database and access to it: Y</li>
+<li>Reload privilege tables now: Y </li>
+</ul>
+</li>
+</ul>
+<h3 id="install-wordpress">Install WordPress</h3>
+<ul>
+<li>To install WordPress, type:<pre><code>cd /var/www/html
+wget http://wordpress.org/latest.tar.gz
+tar -xzvf latest.tar.gz
+</code></pre></li>
+<li>This will uncompress WordPress in its own &#x201C;wordpress&#x201D; directory. I like having WordPress in a separate directory, but would rather rename it to &#x201C;blog&#x201D;:<pre><code>mv wordpress blog
+</code></pre></li>
+<li>Create the WordPress wp-config.php file: <pre><code>cd blog
+mv wp-config-sample.php wp-config.php
+vi wp-config.php
+</code></pre></li>
+<li>In <code>wp-config.php</code>, change:<pre><code>define(&#x2018;DB_NAME&#x2019;, &#x2018;blog&#x2019;);
+define(&#x2018;DB_USER&#x2019;, &#x2018;root&#x2019;);
+define(&#x2018;DB_PASSWORD&#x2019;, &#x2018;YOUR_PASSWORD&#x2019;);
+define(&#x2018;DB_HOST&#x2019;, &#x2018;localhost&#x2019;);
+</code></pre></li>
+</ul>
+<h3 id="map-ip-address-and-domain-name">Map IP Address and Domain Name</h3>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../AWS/nginx_port_forwarding.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Nginx port forwarding"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

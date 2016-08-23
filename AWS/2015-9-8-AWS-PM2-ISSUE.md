@@ -1,10 +1,3 @@
----
-layout: post
-title: Dealing with a wired issues for PM2 on AWS EC2!
-category: Tools, Issue
-tags: AWS, NODE, DEPLOY
----
-
 ## Issue
 
 After installed `node.js` and `pm2` on AWS EC2, cannot run pm2!

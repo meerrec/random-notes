@@ -1,0 +1,297 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Nginx port forwarding | Random Notes for Intreseting Stuff</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../AWS/running_wordpress_on_ec2.html" />
+    
+    
+    <link rel="prev" href="../AWS/2015-9-8-AWS-PM2-ISSUE.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="1.2"
+        data-chapter-title="Nginx port forwarding"
+        data-filepath="AWS/nginx_port_forwarding.md"
+        data-basepath=".."
+        data-revision="Tue Aug 23 2016 14:48:17 GMT-0700 (PDT)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="AWS/index.html">
+            
+                
+                    <a href="../AWS/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        AWS
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="AWS/2015-9-8-AWS-PM2-ISSUE.html">
+            
+                
+                    <a href="../AWS/2015-9-8-AWS-PM2-ISSUE.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        AWS PM2 issues
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="AWS/nginx_port_forwarding.html">
+            
+                
+                    <a href="../AWS/nginx_port_forwarding.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Nginx port forwarding
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="AWS/running_wordpress_on_ec2.html">
+            
+                
+                    <a href="../AWS/running_wordpress_on_ec2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Wordpress on EC2
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Random Notes for Intreseting Stuff</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="nginx-for-port-and-subdomain-proxy">NGINX for Port and Subdomain Proxy</h2>
+<h3 id="issue">Issue:</h3>
+<ul>
+<li>Want to run node app (running on 9999) with <a href="https://github.com/Unitech/pm2" target="_blank">pm2</a> on port 80.</li>
+<li>Want to proxy subdomain to a certain port number. For example, <code>test.example.com&apos; should go to</code>example.com:8888` </li>
+</ul>
+<hr>
+<h3 id="nginx"><a href="https://www.nginx.com/resources/wiki/" target="_blank">Nginx</a>:</h3>
+<p>Nginx (pronounced &quot;engine x&quot;) is a web server with a strong focus on high concurrency, performance and low memory usage. It can also act as a reverse proxy server for HTTP, HTTPS, SMTP, POP3, and IMAP protocols, as well as a load balancer and an HTTP cache.</p>
+<h4 id="install-nginx">Install Nginx</h4>
+<ul>
+<li>Mac<pre><code>brew install nginx
+</code></pre></li>
+<li>Ubuntu<pre><code>sudo apt-get install nginx -y
+</code></pre></li>
+</ul>
+<hr>
+<h4 id="config-file">Config file</h4>
+<ul>
+<li><p>Mac in /usr/local/etc/nginx/nginx.conf</p>
+</li>
+<li><p>Ubuntu in /etc/nginx/sites-enabled/. Disable the default site, <code>sudo rm /etc/nginx/sites-enabled/default</code> first.</p>
+</li>
+<li><p>You can create a config file for your site. For example, create a new file called <code>example.com</code> and add the following in the file:</p>
+</li>
+</ul>
+<pre><code># forward port 80 to port 9999
+server {
+    listen 80;
+    server_name example.com;
+    location / {
+        proxy_set_header   X-Real-IP $remote_addr;
+        proxy_set_header   Host      $http_host;
+        proxy_pass         http://127.0.0.1:9999;
+    }
+}
+
+# forward subdomain test.example.com to port 9999
+# make sure that the subdomain is pointed to the dedicated server id
+server {
+    server_name: test.example.com;
+    location / {
+        proxy_pass  http://127.0.0.1:8888;
+    }
+}
+</code></pre><hr>
+<h4 id="detail-about-config-file">Detail About Config file</h4>
+<ol>
+<li>server { - Declares a server block</li>
+<li>server_name your.domain.com; - Nginx routes work from most specific down to least specific. This directive is used to route the incoming request based on it&apos;s hostname header. You can fill in your domain name or not worry about.</li>
+<li>listen 80; - Specifies what port to accept on. It defaults to 80, so feel free to leave it out.</li>
+<li>location / { - Declares a location block. This can be used for full routing control. In our case, we are routing everything from the root / on.</li>
+<li>proxy_set_header X-Real-IP $remote_addr; - The first part of this line is the directive used to add or modify a header of the incoming request that we are proxying off to our app. The second, is the name of the header we are altering / creating. In this case, it is the &apos;X-Real-IP&apos; header, which is used to identify the IP of the original request. The last part, is an Nginx variable that will hold the IP. It&apos;s worth noting that all of these headers are only transmitted internally to your app and not back to the client.</li>
+<li>proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for; - Similar to the line above, but the difference is the use case of the &apos;X-Forwarded-For&apos; header. It is a comma separated list of all the proxies the request has been through, starting with $remote_addr as the first one.</li>
+<li>proxy_set_header Host $http_host; - Yet another header. This contains the requested hostname of the server, e.g. example.com.</li>
+<li>proxy_set_header X-NginX-Proxy true; - Only used to internally know this request was proxied through Nginx.</li>
+<li>proxy_pass <a href="http://127.0.0.1:2368" target="_blank">http://127.0.0.1:2368</a> - The line that makes the magic happen. This is where our request is going to be handed off to.</li>
+<li>proxy_redirect off; - This directive is used to rewrite the url of the request. We want to keep ours intact so we turn it off.</li>
+</ol>
+<hr>
+<h4 id="start-stop-and-restart">Start, stop and restart</h4>
+<pre><code>sudo service nginx start/stop/restart
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../AWS/2015-9-8-AWS-PM2-ISSUE.html" class="navigation navigation-prev " aria-label="Previous page: AWS PM2 issues"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../AWS/running_wordpress_on_ec2.html" class="navigation navigation-next " aria-label="Next page: Wordpress on EC2"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

@@ -7,7 +7,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="cloud"
+ZSH_THEME="pure"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -47,7 +47,7 @@ ZSH_THEME="cloud"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git web-search)
+plugins=(git web-search zsh-syntax-highlighting)
 
 # User configuration
 
@@ -78,9 +78,6 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias htdocs='cd /Applications/MAMP/code/'
-alias code='cd /Applications/MAMP/code/'
-alias bedrock='cp -r ~/bedrock/* .'
 alias project='cd ~/Projects/'
 # Git aliases
 alias addu='git add -u'
@@ -90,6 +87,8 @@ alias push='git push'
 alias pull='git pull'
 
 alias ec2_node_1='ssh -i ~/certs/EC2-haochuan-1.pem ubuntu@54.153.41.106'
+alias ec2_t2_medium='ssh -i ~/certs/ec2-ubuntu-t2-medium.pem ubuntu@52.33.28.190'
+alias home-server='ssh haochuan@76.126.12.174'
 
 
 
@@ -358,3 +357,5 @@ elif type complete >/dev/null 2>&1; then
         }
     }
 fi
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
